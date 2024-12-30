@@ -1,7 +1,9 @@
 import { BsSmartwatch } from "react-icons/bs";
 import { CiMobile4 } from "react-icons/ci";
 import { FiHeadphones } from "react-icons/fi";
+import { ImMobile2 } from "react-icons/im";
 import { IoGameControllerOutline } from "react-icons/io5";
+import { MdOutlineCameraAlt } from "react-icons/md";
 import { RiComputerLine } from "react-icons/ri";
 
 interface ICategory {
@@ -15,34 +17,40 @@ interface ICategories {
   categories: ICategory[];
 }
 
-export const Categories: ICategories = {
+export const CategoriesData: ICategories = {
   title: "Categories",
   mainHeading: "Browse by Category",
   categories: [
     {
       text: "Phones",
       url: "/phones",
-      icons: <CiMobile4 />,
+      icons: <ImMobile2
+      size={56} />,
     },
     {
       text: "Computers",
       url: "/computers",
-      icons: <RiComputerLine />,
+      icons: <RiComputerLine size={56} />,
+    },
+    {
+      text: "Camera",
+      url: "/camera",
+      icons: <MdOutlineCameraAlt size={56} />,
     },
     {
       text: "Smart Watches",
       url: "/smart-watches",
-      icons: <BsSmartwatch />,
+      icons: <BsSmartwatch size={56} />,
     },
     {
       text: "Headphones",
       url: "/headphones",
-      icons: <FiHeadphones />,
+      icons: <FiHeadphones size={56} />,
     },
     {
       text: "Gaming",
       url: "/gaming",
-      icons: <IoGameControllerOutline />,
+      icons: <IoGameControllerOutline size={56} />,
     },
   ],
 };

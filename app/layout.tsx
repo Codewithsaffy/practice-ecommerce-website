@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import SubNav from "@/components/custom/header/SubNav";
-import { Poppins } from "next/font/google";
-import MainHeader from "@/components/custom/header/MainHeader";
+
+import { Inter, Poppins } from "next/font/google";
+
 import Header from "@/components/custom/header/Header";
+import Footer from "@/components/custom/footer/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-poppins",
+});
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${poppins.className} antialiased`}>
-        <Header/>
+      <body
+        className={`${poppins.variable} ${inter.className} ${inter.variable} antialiased`}
+      >
+        <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

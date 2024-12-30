@@ -1,6 +1,6 @@
 import { INavLink } from "./Header";
 
-interface IFeaturedCardItems {
+export interface IFeaturedCardItems {
   image: string;
   mainHeading: string;
   subHeading: string;
@@ -23,7 +23,7 @@ export const FeaturedData: IFeatured = {
       buttonText: { text: "Shop Now", url: "#" },
     },
     {
-      image: "/images/newArival/2.png",
+      image: "/images/newArival/2.jpg",
       mainHeading: "Women’s Collections",
       subHeading: "Featured woman collections that give you another vibe.",
       buttonText: { text: "Shop Now", url: "#" },

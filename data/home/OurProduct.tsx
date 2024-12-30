@@ -4,13 +4,7 @@ import { ICardItems } from "./Todays";
 interface IOurProduct {
   title: string;
   MainHeading: string;
-  topBox: {
-    title: string;
-    mainHeading: string;
-    remainTime: string;
-    buttonText: INavLink;
-    image: string;
-  };
+  
   cardItems: ICardItems[];
   buttonText: INavLink;
 }
@@ -22,20 +16,13 @@ export const OurProductData: IOurProduct = {
     url: "#"
   },
   MainHeading: "Explore Our Product",
-  topBox: {
-    title: "Categories",
-    mainHeading: "Enhance Your Music Experience",
-    remainTime: "24:00:00",
-    buttonText: { text: "Buy Now", url: "#" },
-    image: "/images/outProducts/boxImg.png",
-  },
+ 
   cardItems: [
     {
-      image: "/images/outProducts/1.png",
+      image: "/images/outProducts/1.jpg",
       title: "Breed Dry Dog Food",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },
@@ -44,7 +31,6 @@ export const OurProductData: IOurProduct = {
       title: "CANON EOS DSLR Camera",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },
@@ -53,16 +39,14 @@ export const OurProductData: IOurProduct = {
       title: "ASUS FHD Gaming Laptop",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },
     {
-      image: "/images/outProducts/4png",
+      image: "/images/outProducts/4.png",
       title: "Curology Product Set",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },
@@ -71,7 +55,6 @@ export const OurProductData: IOurProduct = {
       title: "Kids Electric Car",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },
@@ -80,7 +63,6 @@ export const OurProductData: IOurProduct = {
       title: "Jr. Zoom Soccer Cleats",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },
@@ -89,7 +71,6 @@ export const OurProductData: IOurProduct = {
       title: "GP11 Shooter USB Gamepad",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },
@@ -98,7 +79,6 @@ export const OurProductData: IOurProduct = {
       title: "Quilted Satin Jacket",
       actualPrice: "$160",
       discountPrice: "$120",
-      discountInPercentage: "40%",
       rateNo: 88,
       rateStar:5,
     },

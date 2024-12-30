@@ -5,23 +5,44 @@ export interface ICardItems {
   title: string;
   actualPrice: string;
   discountPrice: string;
-  discountInPercentage: string;
+  discountInPercentage?: string;
   rateNo: number;
+  new?: boolean;
   rateStar: number;
-
 }
 interface ITodays {
   title: string;
   MainHeading: string;
-  remainTime: string;
-  cardItems:ICardItems[]
-  buttonText: INavLink
+  remainTime: {
+    title: string;
+    time: number;
+  }[];
+
+  cardItems: ICardItems[];
+  buttonText: INavLink;
 }
 
 export const TodaysData: ITodays = {
-  title: "Today&apos;s",
+  title: "Today's",
   MainHeading: "Flash Sales",
-  remainTime: "00:00:00",
+  remainTime: [
+    {
+      title: "Days",
+      time: 3,
+    },
+    {
+      title: "Hours",
+      time: 23,
+    },
+    {
+      title: "Minutes",
+      time: 19,
+    },
+    {
+      title: "Seconds",
+      time: 56,
+    },
+  ],
   buttonText: { text: "View All Product", url: "#" },
   cardItems: [
     {
@@ -31,7 +52,7 @@ export const TodaysData: ITodays = {
       discountPrice: "$120",
       discountInPercentage: "40%",
       rateNo: 88,
-      rateStar:5,
+      rateStar: 5,
     },
     {
       image: "/images/flashsale/2.png",
@@ -40,7 +61,7 @@ export const TodaysData: ITodays = {
       discountPrice: "$90",
       discountInPercentage: "35%",
       rateNo: 75,
-      rateStar:4,
+      rateStar: 4,
     },
     {
       image: "/images/flashsale/3.png",
@@ -49,7 +70,7 @@ export const TodaysData: ITodays = {
       discountPrice: "$370",
       discountInPercentage: "32%",
       rateNo: 75,
-      rateStar:4,
+      rateStar: 4,
     },
     {
       image: "/images/flashsale/4.png",
@@ -58,7 +79,7 @@ export const TodaysData: ITodays = {
       discountPrice: "$400",
       discountInPercentage: "35%",
       rateNo: 75,
-      rateStar:4,
+      rateStar: 4,
     },
     {
       image: "/images/flashsale/4.png",
@@ -67,8 +88,7 @@ export const TodaysData: ITodays = {
       discountPrice: "$400",
       discountInPercentage: "35%",
       rateNo: 75,
-      rateStar:4,
-    }
-  ]
-}
-
+      rateStar: 4,
+    },
+  ],
+};

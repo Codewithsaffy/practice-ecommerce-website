@@ -8,19 +8,19 @@ interface IBenefitsOfWebsite {
   subText: string;
 }
 
-export const BenefitsOfWebsite: IBenefitsOfWebsite[] = [
+export const BenefitsOfWebsiteData: IBenefitsOfWebsite[] = [
   {
-    icons: <LiaShippingFastSolid />,
+    icons: <LiaShippingFastSolid size={40} />,
     text: "FREE AND FAST DELIVERY",
     subText: "Free delivery for all orders over $140",
   },
   {
-    icons: <PiHeadset />,
+    icons: <PiHeadset size={40} />,
     text: "24/7 CUSTOMER SERVICE",
     subText: "Friendly 24/7 customer service",
   },
   {
-    icons: <BsShieldCheck />,
+    icons: <BsShieldCheck size={40} />,
     text: "MONEY BACK GUARANTEE",
     subText: "We return money within 30 days",
   },

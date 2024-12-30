@@ -11,7 +11,7 @@ interface IThisMonth {
 export const ThisMonthData: IThisMonth = {
   title: "This Month",
   MainHeading: "Best Selling Products",
-  buttonText: { text: "View All Product", url: "#" },
+  buttonText: { text: "View All", url: "#" },
   cardItems: [
     {
       image: "/images/thisMonth/1.png",

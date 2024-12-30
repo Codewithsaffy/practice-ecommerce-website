@@ -4,7 +4,7 @@ import React from "react";
 
 const Category = () => {
   return (
-    <section className="flex justify-between h-[400px] pt-10 pb-3 max-w-[230px]  w-full  flex-col">
+    <section className="flex font-poppins justify-between h-[400px] pt-10 pb-3 max-w-[230px]  w-full  flex-col">
       {categoryData.map((cat) => {
         return (
           <Link

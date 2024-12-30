@@ -8,9 +8,9 @@ import { MainHeaderData } from "@/data/home/Header";
 
 const MainHeader = () => {
   return (
-    <header className="flex py-2 mt-6 border-b-[1px] border-gray-300 max-w-6xl mx-auto w-full items-center justify-between">
+    <header className="flex py-4 mt-10 border-b-[1px] border-gray-300 max-w-6xl mx-auto w-full items-center justify-between">
       <h2 className="font-bold text-2xl">{MainHeaderData.logo}</h2>
-      <nav className="flex gap-10 items-center">
+      <nav className="flex font-poppins gap-10 items-center">
         {MainHeaderData.navLink.map((item) => (
           <Link key={item.text} href={item.url}>{item.text}</Link>
         ))}
